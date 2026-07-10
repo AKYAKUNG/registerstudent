@@ -1,0 +1,19 @@
+SELECT * FROM tbl_student
+INNER JOIN tbl_major 
+ON tbl_student.major_id = tbl_major.major_id
+
+SELECT * FROM tbl_student
+WHERE std_gender = 'ชาย';
+
+SELECT * FROM tbl_student WHERE std_name LIKE 'อ%'
+
+SELECT * tbl_student
+WHERE std_birth BETWEEN 10 AND 20;
+
+SELECT *
+FROM tbl_student
+WHERE std_birth BETWEEN '2000-01-01' AND '2025-12-31';
+
+UPDATE tbl_student
+SET std_name = 'Aphichat', std_address='กรุงเทพ'
+WHERE std_di = '6840214130';
